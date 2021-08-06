@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    overflow: hidden;
+    background: #0a0a0a;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.wrapper .container {
+    width: 96%;
+    margin: 0px auto;
+}
+
+
+/* navbar */
+
+.header {
+    width: 96%;
+    /* position: ; */
+    margin: 0px auto;
+}
+
+.navbar .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 0;
+    font-size: 16px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navbar .navbar-container .site-title {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.navbar .navbar-container .site-type {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.navbar .navbar-container .site-year {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    text-align: right;
+}
+
+
+/* container */
+
+.container {
+    width: 100%;
+    height: calc(100vh - 41px);
+    background: green;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+}
+
+section {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+    height: calc(100vh - 41px);
+    scroll-snap-align: start;
+}
+
+section:nth-child(1) {
+    background-color: grey;
+}
+
+section:nth-child(2) {
+    background-color: rgb(122, 70, 70);
+}
+
+section:nth-child(3) {
+    background-color: rgb(252, 82, 82);
+}
